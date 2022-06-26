@@ -15,6 +15,8 @@ export const Navbar = ({ user }) => {
             history.push('/login');
         })
     }
+
+    
     return (
         <div className='navbox'>
             <div className='leftside'>
