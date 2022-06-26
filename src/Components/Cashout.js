@@ -5,12 +5,9 @@ import { Navbar } from './Navbar';
 import { useHistory } from 'react-router-dom'
 
 export const Cashout = (props) => {
-
     const history = useHistory();
 
     const { shoppingCart, totalPrice, totalQty, dispatch } = useContext(CartContext);
-
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [cell, setCell] = useState('');

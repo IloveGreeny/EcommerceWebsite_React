@@ -5,9 +5,7 @@ import { useHistory } from 'react-router-dom'
 import { auth } from '../Config/Config'
 
 export const Home = ({ user }) => {
-
     const history = useHistory();
-
     useEffect(() => {
         auth.onAuthStateChanged(user => {
             if (!user) {

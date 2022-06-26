@@ -3,9 +3,7 @@ import { ProductsContext } from '../Global/ProductsContext'
 import { CartContext } from '../Global/CartContext'
 
 export const Products = () => {
-
     const { products } = useContext(ProductsContext);
-
     const { dispatch } = useContext(CartContext);
 
     return (

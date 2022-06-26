@@ -3,10 +3,10 @@ import { auth } from '../Config/Config'
 import { Link } from 'react-router-dom'
 
 export const Login = (props) => {
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+
 
     const login = (e) => {
         e.preventDefault();
@@ -18,6 +18,7 @@ export const Login = (props) => {
         }).catch(err => setError(err.message));
     }
 
+    
     return (
         <div className='container'>
             <br />

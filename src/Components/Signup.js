@@ -3,12 +3,10 @@ import { auth, db } from '../Config/Config'
 import { Link } from 'react-router-dom'
 
 export const Signup = (props) => {
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-
 
     const signup = (e) => {
         e.preventDefault();
@@ -26,6 +24,7 @@ export const Signup = (props) => {
             }).catch(err => setError(err.message));
         }).catch(err => setError(err.message));
     }
+
 
     return (
         <div className='container'>
