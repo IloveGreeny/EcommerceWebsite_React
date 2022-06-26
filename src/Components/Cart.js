@@ -10,9 +10,7 @@ import { useHistory } from 'react-router-dom'
 import { auth } from '../Config/Config'
 
 export const Cart = ({ user }) => {
-
     const { shoppingCart, dispatch, totalPrice, totalQty } = useContext(CartContext);
-
     const history = useHistory();
 
     useEffect(() => {

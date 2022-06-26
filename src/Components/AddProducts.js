@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import { storage, db } from '../Config/Config'
 
 export const AddProducts = () => {
-
     const [productName, setProductName] = useState('');
     const [productPrice, setProductPrice] = useState(0);
     const [productImg, setProductImg] = useState(null);
     const [error, setError] = useState('');
-
     const types = ['image/png', 'image/jpeg'];
+
 
     const productImgHandler = (e) => {
         let selectedFile = e.target.files[0];
@@ -21,6 +20,7 @@ export const AddProducts = () => {
             setError('Please select a valid image type (jpg or png)');
         }
     }
+
 
     const addProduct = (e) => {
         e.preventDefault();
@@ -45,7 +45,6 @@ export const AddProducts = () => {
                 })
             })
     }
-
     return (
         <div className='container'>
             <br />
