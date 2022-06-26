@@ -4,7 +4,7 @@ import 'firebase/storage';
 import 'firebase/firestore';
 import 'firebase/auth'
 
-const firebaseConfig = { // Your Config
+const firebaseConfig = { // Your Firebase Config
     //apiKey: "AIzaSyDGmVBx5LAYJuIq_Ni1nZBenfcVUFX-SyY",
     //authDomain: "ecommerce-with-react-2ac06.firebaseapp.com",
     //databaseURL: "https://ecommerce-with-react-2ac06.firebaseio.com",
