@@ -2,12 +2,12 @@ import React, { createContext } from 'react'
 import { db } from '../Config/Config'
 
 export const ProductsContext = createContext();
-
 export class ProductsContextProvider extends React.Component {
 
     state = {
         products: []
     }
+
 
     componentDidMount() {
 
