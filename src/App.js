@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ProductsContextProvider } from './Global/ProductsContext'
 import { Home } from './Components/Home'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Signup } from './Components/Signup'
 import { Login } from './Components/Login'
 import { NotFound } from './Components/NotFound'
@@ -40,7 +40,7 @@ export class App extends Component {
         return (
             <ProductsContextProvider>
                 <CartContextProvider>
-                    <BrowserRouter>
+                    <Router>
                         <Switch>
                             <Route exact path='/' component={() => <Home user={this.state.user} />} />
                             <Route path="/signup" component={Signup} />
@@ -50,7 +50,7 @@ export class App extends Component {
                             <Route path='/cashout' component={() => <Cashout user={this.state.user} />} />
                             <Route component={NotFound} />
                         </Switch>
-                    </BrowserRouter>
+                    </Router>
                 </CartContextProvider>
             </ProductsContextProvider>
         )
