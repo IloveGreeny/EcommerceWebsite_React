@@ -6,6 +6,7 @@ export const Products = () => {
     const { products } = useContext(ProductsContext);
     const { dispatch } = useContext(CartContext);
 
+
     return (
         <>
             {products.length !== 0 && <h1>Products</h1>}
